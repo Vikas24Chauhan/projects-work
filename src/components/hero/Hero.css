@@ -17,41 +17,11 @@
   z-index: 0;
 }
 
-.hero-left-title {
+.hero-base::after {
+  content: "";
   position: absolute;
-  left: 32px;
-  top: 50%;
-  transform: translateY(-52%);
-  z-index: 6;
-  font-weight: 600;
-  opacity: 0;
-  translate: 30px 0;
-  will-change: opacity, translate;
-  transition:
-    opacity 0.72s 0.08s ease,
-    translate 0.8s 0.08s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.hero--expand .hero-left-title {
-  opacity: 1;
-  translate: 0 0;
-}
-
-.hero-name {
-  font-size: 50px;
-  line-height: 60px;
-  font-weight: 700;
-  margin: 10px 0;
-}
-
-.hero-title {
-  font-size: 32px;
-  font-weight: 600;
-  margin: 10px 0;
-}
-
-.hero-typewriter {
-  color: #feb122;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
 }
 
 .hero-intro-name {
@@ -89,10 +59,49 @@
 
 .hero-intro-doc {
   display: block;
-  font-size: 8rem;
+  font-size: 7rem;
+  font-weight: 700;
   letter-spacing: 0.04em;
-  line-height: 0.9;
+  line-height: 1.1;
   color: #fff;
+  text-transform: uppercase;
+}
+
+.hero-left-title {
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-52%);
+  z-index: 6;
+  font-weight: 600;
+  opacity: 0;
+  translate: 30px 0;
+  will-change: opacity, translate;
+  transition:
+    opacity 0.72s 0.08s ease,
+    translate 0.8s 0.08s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero--expand .hero-left-title {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.hero-name {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.hero-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.hero-typewriter {
+  color: #feb122;
 }
 
 .hero-img-wrap {
@@ -155,10 +164,10 @@
   pointer-events: auto;
 }
 
-.hero-r-cta {
+.hero-text {
   font-size: 16px;
-  word-spacing: 2px;
   letter-spacing: 2px;
+  line-height: 1.5;
   color: #fff;
   text-align: right;
 }
@@ -167,7 +176,7 @@
   width: fit-content;
   padding: 10px 20px;
   margin-top: 24px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   text-align: center;
   color: white;
@@ -198,7 +207,7 @@
 
 @media (max-width: 868px) {
   .hero-intro-doc {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .hero-img-wrap {
@@ -245,15 +254,32 @@
     align-items: start;
   }
 
-  .hero-r-cta {
+  .hero-text {
     text-align: start;
   }
 }
 
 @media (max-width: 480px) {
   .hero-intro-doc {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     letter-spacing: 0.02em;
+  }
+
+  .hero-img-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  .hero-left-title {
+    top: 56%;
+    left: 20px;
+  }
+
+  .hero-right {
+    left: 20px;
+    top: 81%;
   }
 
   .hero-name {
@@ -266,6 +292,7 @@
   }
 
   .hero-resume {
+    font-size: 16px;
     margin-top: 10px;
   }
 }
