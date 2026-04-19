@@ -27,11 +27,11 @@ function Hero() {
       </div>
 
       <div className="hero-left-title">
-        <p className="hero-name">
+        <h1 className="hero-name">
           Hi, I am
           <br />
           Vikas Chauhan
-        </p>
+        </h1>
         <div className="hero-title">
           I am a{" "}
           <span className="hero-typewriter">
@@ -51,10 +51,8 @@ function Hero() {
 
       <div className="hero-right">
         <span className="hero-text">
-          I am a motivated and versatile individual, always eager to take on new
-          challenges. With a passion for learning, I am dedicated to delivering
-          high-quality results. With a positive attitude and a growth mindset, I
-          am ready to make a meaningful contribution and achieve great things.
+          React JS Developer Building Modern, Scalable Web Applications. Focused
+          on Clean UI, Performance, and Seamless User Experience.
         </span>
         <a
           href="https://drive.google.com/file/d/1T9_0AQpJiOzQn-5X4id2H69GAW2tawTA/view?usp=drive_link"

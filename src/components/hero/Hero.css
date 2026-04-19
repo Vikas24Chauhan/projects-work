@@ -236,7 +236,7 @@
   }
 
   .hero-left-title {
-    top: 60%;
+    top: 65%;
   }
 
   .hero-name {
@@ -272,14 +272,9 @@
     background: rgba(0, 0, 0, 0.45);
   }
 
-  .hero-left-title {
-    top: 56%;
-    left: 20px;
-  }
-
+  .hero-left-title,
   .hero-right {
     left: 20px;
-    top: 81%;
   }
 
   .hero-name {
