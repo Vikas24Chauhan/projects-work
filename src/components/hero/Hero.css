@@ -67,6 +67,10 @@
   text-transform: uppercase;
 }
 
+.hero-intro-doc-span {
+  color: #feb122;
+}
+
 .hero-left-title {
   position: absolute;
   left: 32px;

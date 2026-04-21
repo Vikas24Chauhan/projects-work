@@ -21,9 +21,10 @@ function Hero() {
       <div className="hero-base" />
 
       <div className="hero-intro-name">
-        <span className="hero-intro-doc">
-          Welcome to <br /> My Portfolio
-        </span>
+        <p className="hero-intro-doc">
+          <span className="hero-intro-doc-span">Welcome</span> to <br /> My{" "}
+          <span className="hero-intro-doc-span">Portfolio</span>
+        </p>
       </div>
 
       <div className="hero-left-title">
