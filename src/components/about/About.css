@@ -1,8 +1,13 @@
+.about-container {
+  background-color: #000000;
+}
+
 .about-section {
   position: relative;
   text-align: center;
   padding: 5rem 0;
-  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 60px 60px 0 0;
 }
 
 .about-content {
@@ -38,12 +43,20 @@
 }
 
 @media (max-width: 868px) {
+  .about-section {
+    border-radius: 50px 50px 0 0;
+  }
+
   .about-content {
     width: 95%;
   }
 }
 
 @media (max-width: 480px) {
+  .about-section {
+    border-radius: 40px 40px 0 0;
+  }
+
   .about-content {
     width: 100%;
   }

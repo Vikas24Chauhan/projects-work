@@ -173,36 +173,6 @@ function Projects() {
       link: "https://conceptualradiology.com/radiological-anatomy-practice-cases/",
       alt: "Radiology Anatomy Books",
     },
-    {
-      id: 7,
-      image:
-        "https://cdn.dribbble.com/userupload/46394014/file/92b80220ee54ffcc26e2240611d7a70e.jpeg",
-      title: "7. Spotters Cases in Radiology",
-      description:
-        "A dedicated spotters book created to improve speed, accuracy, and confidence in identifying key imaging findings. Ideal for systematic revision, exam preparation, and group discussions for MD and DNB radiology residents.",
-      link: "https://conceptualradiology.com/spotters-cases-in-radiology/",
-      alt: "Radiology Spotters Book",
-    },
-    {
-      id: 8,
-      image:
-        "https://cdn.dribbble.com/userupload/46394012/file/30e6647c99e156baf67a9a238eeb0b86.jpeg",
-      title: "8. DNB Master Solutions Radiology - Volume I",
-      description:
-        "An exam-oriented resource featuring actual DNB Radiology question papers from the past six years with detailed, point-wise solutions. It helps students understand exam patterns, marking schemes, and answer-writing strategies.",
-      link: "https://conceptualradiology.com/dnb-master-solution-radiology-vol-1/",
-      alt: "DNB Radiology Books Volume 1",
-    },
-    {
-      id: 9,
-      image:
-        "https://cdn.dribbble.com/userupload/46394021/file/835ef06e0277c7dd99426f7d6f5bd1fb.jpeg",
-      title: "9. DNB Master Solutions Radiology - Volume II",
-      description:
-        "This volume continues with more recent DNB Radiology question papers and in-depth explanations. It supports final-phase preparation by highlighting high-frequency topics and refining exam strategies with confidence.",
-      link: "https://conceptualradiology.com/dnb-master-solution-radiology-vol-2/",
-      alt: "DNB Radiology Books Volume 2",
-    },
   ];
   return (
     <div className="projects-container">

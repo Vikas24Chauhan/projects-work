@@ -1,5 +1,5 @@
 .projects-container {
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   background-color: #000000;
   border-radius: 80px 80px 0 0;
 }
@@ -143,6 +143,10 @@
 @media (max-width: 480px) {
   .projects-container {
     border-radius: 40px 40px 0 0;
+  }
+
+  .projects-cards {
+    width: 100%;
   }
 
   .projects-card {
