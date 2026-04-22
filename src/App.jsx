@@ -7,6 +7,7 @@ import About from "./components/about/About";
 import { Skills } from "./components/skills/Skills";
 import { Experiences } from "./components/experiences/Experiences";
 import Projects from "./components/projects/Projects";
+import Education from "./components/education/Education";
 import Footer from "./components/footer/Footer";
 
 function App() {
@@ -36,9 +37,9 @@ function App() {
         <Projects />
       </section>
 
-      {/* <section id="education">
+      <section id="education">
         <Education />
-      </section> */}
+      </section>
 
       <Footer />
     </Router>

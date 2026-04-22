@@ -58,7 +58,7 @@ export const Skills = () => {
         <div className="skills-cards_container">
           <div className="skills-cards">
             <div className="skills-card tilt">
-              <div>Languages</div>
+              <h2 className="skills-card-title">Languages</h2>
               <div className="skills-tech_box">
                 <div className="skills-tech">
                   <img src={C} alt="c" />C
@@ -79,7 +79,7 @@ export const Skills = () => {
             </div>
 
             <div className="skills-card tilt">
-              <div>Frontend</div>
+              <h2 className="skills-card-title">Frontend</h2>
               <div className="skills-tech_box">
                 <div className="skills-tech">
                   <img src={Reactjs} alt="reactjs" />
@@ -109,7 +109,7 @@ export const Skills = () => {
             </div>
 
             <div className="skills-card tilt">
-              <div>Other Tools</div>
+              <h2 className="skills-card-title">Other Tools</h2>
               <div className="skills-tech_box">
                 <div className="skills-tech">
                   <img src={Git} alt="git" />
