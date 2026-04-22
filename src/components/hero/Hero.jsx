@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.css";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Hero() {
   const [phase, setPhase] = useState("intro");
@@ -16,8 +18,16 @@ function Hero() {
     loop: {},
   });
 
+  useEffect(() => {
+    AOS.init({ duration: 1000, offset: 200 });
+  }, []);
+
   return (
-    <section className={`hero hero--${phase}`} aria-label="Bootcamp Hero">
+    <section
+      id="/"
+      className={`hero hero--${phase}`}
+      aria-label="Bootcamp Hero"
+    >
       <div className="hero-base" />
 
       <div className="hero-intro-name">

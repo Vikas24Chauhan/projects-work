@@ -1,9 +1,15 @@
-import React from "react";
+import { React, useEffect } from "react";
 import "./About.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function About() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, offset: 200 });
+  }, []);
+
   return (
-    <div className="about-container">
+    <div id="about" className="about-container">
       <div className="about-section">
         <div className="about-content">
           <h2>About Me</h2>

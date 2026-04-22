@@ -18,8 +18,14 @@ import ChatGPT from "../../assets/images/chatgpt.png";
 import C from "../../assets/images/c.png";
 import Java from "../../assets/images/java.png";
 import Python from "../../assets/images/python.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Skills = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, offset: 200 });
+  }, []);
+
   useEffect(() => {
     const isTouchDevice = () => {
       return "ontouchstart" in window || navigator.maxTouchPoints > 0;
@@ -41,7 +47,7 @@ export const Skills = () => {
   }, []);
 
   return (
-    <div className="skills-container">
+    <div id="skills" className="skills-container">
       <div className="skills-section">
         <p className="skills-heading">Skills</p>
         <p className="skills-desc">

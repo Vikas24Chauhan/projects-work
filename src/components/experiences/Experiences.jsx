@@ -12,7 +12,7 @@ export const Experiences = () => {
   }, []);
 
   return (
-    <div className="experiences-container">
+    <div id="experiences" className="experiences-container">
       <div className="experiences-section">
         <p className="experiences-heading">Experiences</p>
         <p className="experiences-subheading">

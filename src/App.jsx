@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Navbar } from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
 import { Skills } from "./components/skills/Skills";
@@ -10,16 +11,37 @@ import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
+    <Router>
+      <Navbar />
+
+      {/* <Hero /> */}
+
+      <section id="/">
         <Hero />
+      </section>
+
+      <section id="about">
         <About />
+      </section>
+
+      <section id="skills">
         <Skills />
+      </section>
+
+      <section id="experiences">
         <Experiences />
+      </section>
+
+      <section id="projects">
         <Projects />
-        <Footer />
-      </BrowserRouter>
-    </>
+      </section>
+
+      {/* <section id="education">
+        <Education />
+      </section> */}
+
+      <Footer />
+    </Router>
   );
 }
 

@@ -2,10 +2,16 @@ import React, { useEffect, useRef } from "react";
 import "./Projects.css";
 import { data, NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Projects() {
   const cardsContainerRef = useRef(null);
   const cardsRef = useRef([]);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, offset: 200 });
+  }, []);
 
   useEffect(() => {
     const initializeScrollEffects = () => {
@@ -174,8 +180,9 @@ function Projects() {
       alt: "Radiology Anatomy Books",
     },
   ];
+
   return (
-    <div className="projects-container">
+    <div id="projects" className="projects-container">
       <Helmet>
         <title>Conceptual Radiology Books - Dr. Zainab Vora</title>
 
