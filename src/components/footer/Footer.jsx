@@ -24,7 +24,13 @@ function Footer() {
         </div>
       </div>
 
-      <p className="footer-copy">© 2026 Vikas Chauhan. All rights reserved.</p>
+      <div className="footer-last">
+        <p className="footer-copy">
+          © 2026 Developer Vikas. All rights reserved.
+        </p>
+
+        <p className="footer-copy">Made with Love ❤️</p>
+      </div>
     </div>
   );
 }
