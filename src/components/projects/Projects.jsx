@@ -4,6 +4,16 @@ import { data, NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CDN from "../../assets/images/cdn.png";
+import TenHR from "../../assets/images/ten-hr-consulting.png";
+import TenAI from "../../assets/images/ten-ai-consulting-Labs.png";
+import PublicAdvocacy from "../../assets/images/public_advocacy.png";
+import Edusity from "../../assets/images/edusity.png";
+import Pokemon from "../../assets/images/pokemon.png";
+import TenFunding from "../../assets/images/ten_funding.png";
+import TenToddlers from "../../assets/images/ten_toddlers.png";
+import Imagify from "../../assets/images/imagify.png";
+import VcIncubation from "../../assets/images/vcIncubation.png";
 
 function Projects() {
   const cardsContainerRef = useRef(null);
@@ -118,66 +128,51 @@ function Projects() {
     cardsRef.current[index] = el;
   };
 
-  const cardData = [
+  const projects = [
     {
       id: 1,
-      image:
-        "https://cdn.dribbble.com/userupload/46394017/file/eb15229bf4528535eeddaf219d065f1e.jpeg",
-      title: "1. Concepts in Radiology - Volume I",
+      title: "TEN HR Consulting",
+      image: TenHR,
       description:
-        "This volume lays a strong foundation in radiology by covering all major subspecialties with a balanced mix of theory and clinical application. Written by legendary faculty, it helps residents understand imaging concepts systematically while integrating practical insights, multimedia resources, and self-assessment tools for effective learning.",
-      link: "https://conceptualradiology.com/concepts-in-radiology-vol-1/",
-      alt: "Concepts in Radiology Book Volume 1",
+        "The TEN HR Consulting website is offering you Entrepreneurship Network’s HR services. The TEN-HR-Consulting website is proud to offer HR services from The Entrepreneurship Network, providing expert solutions to support your business's growth and success.",
+      color: "cyan",
+      link: "https://ten-hr-consulting-self.vercel.app/",
     },
     {
       id: 2,
-      image:
-        "https://cdn.dribbble.com/userupload/46394018/file/e2ca361d6ade93b5638c2714ab27b0c6.jpeg",
-      title: "2. Concepts in Radiology - Volume II",
+      title: "TEN Funding",
+      image: TenFunding,
       description:
-        "Volume II focuses on conceptual clarity and diagnostic reasoning through concise lecture notes and case-based explanations. It is especially useful for early residents who want to develop a structured approach to image interpretation across multiple radiology subspecialties.",
-      link: "https://conceptualradiology.com/concepts-in-radiology-vol-2/",
-      alt: "Concepts in Radiology Book Volume 2",
+        "TEN Funding is the ultimate platform for exploring the investors backing The Entrepreneurship Network (TEN). It connects aspiring entrepreneurs with the funding ecosystem that powers TEN's innovative projects. By bridging the gap between visionaries and financial support, TEN Funding fosters a thriving entrepreneurial community.",
+      color: "blue",
+      link: "https://ten-funding-lime.vercel.app/",
     },
     {
       id: 3,
-      image:
-        "https://cdn.dribbble.com/userupload/46394011/file/f2f968f6bbef5f79f2f0b7badfe0a53b.jpeg",
-      title: "3. Concepts in Radiology - Volume III",
+      title: "IMAGIFY",
+      image: Imagify,
       description:
-        "Designed to sharpen higher-level diagnostic skills, this volume connects imaging findings with pathology, surgical planning, and clinical decision-making. It blends evidence-based guidelines with expert judgment, preparing learners for real-world reporting and multidisciplinary discussions.",
-      link: "https://conceptualradiology.com/concepts-in-radiology-vol-3/",
-      alt: "Concepts in Radiology Book Volume 3",
+        "Developed a web-based application that converts text into images, allowing users to generate visually appealing text-based graphics. The project utilizes modern web technologies, including React.js for the frontend and Node.js for backend processing. Implemented features such as customizable fonts, colors, and backgrounds to enhance user creativity. Designed an intuitive UI for seamless user experience and optimized performance for fast image generation.",
+      color: "purple",
+      link: "https://imagify-ten-mu.vercel.app/",
     },
     {
       id: 4,
-      image:
-        "https://cdn.dribbble.com/userupload/46394020/file/0ec80a054ae6708cbad565e900d864fb.jpeg",
-      title: "4. Concepts in Radiology - Volume IV",
+      title: "TEN Toddlers",
+      image: TenToddlers,
       description:
-        "A high-yield, focused guide covering Chest Imaging, Cardiovascular Radiology, and Uro-radiology. The content progresses from basic principles to advanced applications, making it ideal for quick revision, daily reporting reference, and exam-oriented preparation.",
-      link: "https://conceptualradiology.com/concepts-in-radiology-vol-4/",
-      alt: "Concepts in Radiology Book Volume 4",
+        "This website is a comprehensive resource dedicated to Baby Brain Development, offering valuable guidance to help parents nurture their child's cognitive and intellectual growth. With expert mentors available, parents can receive personalized support and scientifically-backed strategies tailored to their baby's developmental stage. The platform covers a wide range of topics, including sensory development, early learning techniques, memory-building activities, and language skills enhancement.",
+      color: "amber",
+      link: "https://ten-toddlers-mu.vercel.app/",
     },
     {
       id: 5,
-      image:
-        "https://cdn.dribbble.com/userupload/46394013/file/d37ddc72c73bc3d6679e90531feaeeaa.jpeg",
-      title: "5. Concepts in Radiology - Volume V",
+      title: "Edusity",
+      image: Edusity,
       description:
-        "This volume integrates Women’s Imaging, Core Imaging Physics, and important advances in radiology. It simplifies complex physics concepts, explains safety protocols and guidelines clearly, and delivers exam-ready content for residents and fellows.",
-      link: "https://conceptualradiology.com/concepts-in-radiology-vol-5/",
-      alt: "Concepts in Radiology Book Volume 5",
-    },
-    {
-      id: 6,
-      image:
-        "https://cdn.dribbble.com/userupload/46394009/file/765ad69ae1b8c70a42f99b6f37db78b2.jpeg",
-      title: "6. Radiological Anatomy: Practice Cases",
-      description:
-        "A practical, image-based book designed to strengthen radiological anatomy using X-ray, CT, MRI, and ultrasound cases. It enhances recognition of normal anatomy, anatomical variants, and key landmarks essential for accurate interpretation.",
-      link: "https://conceptualradiology.com/radiological-anatomy-practice-cases/",
-      alt: "Radiology Anatomy Books",
+        "Welcome to our College Website, your go-to resource for comprehensive information about our institution. Explore our academic programs, campus life, admissions process, and more. Whether you're a prospective student or just curious about what we offer, you'll find everything you need to know right here.",
+      color: "emerald",
+      link: "https://vikas24chauhan.github.io/edusity/",
     },
   ];
 
@@ -201,7 +196,7 @@ function Projects() {
       </div>
 
       <div className="projects-cards" ref={cardsContainerRef}>
-        {cardData.map((card, index) => (
+        {projects.map((card, index) => (
           <div
             key={card.id}
             className="projects-card"
@@ -213,7 +208,7 @@ function Projects() {
                 <img
                   className="projects-card__image"
                   src={card.image}
-                  alt={card.alt}
+                  alt={card.title}
                 />
               </div>
               <div className="projects-card__content">
